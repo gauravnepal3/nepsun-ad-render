@@ -11,6 +11,8 @@
 <!-- Paste ad library tags / prebid / GPT header code here. -->
 <!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script> -->
 <!-- ======================== -->
+<!-- 2. Load once per ad slot (can go in <head> or anywhere in <body>) -->
+<script async src="https://direct.us.adstork.com/v1/serve.js?fid=b724dca4-cac0-429c-b378-a68691ca4a93"></script>
 </head>
 <body>
 
@@ -29,7 +31,11 @@
 
   <!-- AD SLOT: top leaderboard (728x90 / 970x250) -->
   <div class="ad-slot ad-slot--leaderboard" id="ad-leaderboard-top" data-label="Ad · leaderboard top">
-    <!-- paste ad code here -->
+<!-- 1. Place this where you want the ad to appear -->
+<div data-atk-fid="de5f4e78-52d6-4dcd-aee6-f5e73fdd0905"></div>
+
+<!-- 2. Load once per ad slot (can go in <head> or anywhere in <body>) -->
+<script async src="https://direct.us.adstork.com/v1/serve.js?fid=de5f4e78-52d6-4dcd-aee6-f5e73fdd0905"></script>
   </div>
 
   <div class="layout">
@@ -76,7 +82,11 @@
 
       <!-- AD SLOT: bottom of feed -->
       <div class="ad-slot ad-slot--rectangle" id="ad-feed-bottom" data-label="Ad · below feed">
-        <!-- paste ad code here -->
+<!-- 1. Place this where you want the ad to appear -->
+<div data-atk-fid="47e60168-2f5b-4c28-8d87-f4d37accca8e"></div>
+
+<!-- 2. Load once per ad slot (can go in <head> or anywhere in <body>) -->
+<script async src="https://direct.us.adstork.com/v1/serve.js?fid=47e60168-2f5b-4c28-8d87-f4d37accca8e"></script>
       </div>
 
     </main>
